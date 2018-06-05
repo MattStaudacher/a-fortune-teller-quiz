@@ -10,6 +10,39 @@
   </head>
   <body class="container-fluid">
     <h1 class="jumbotron">A Fortune Teller Quiz</h1>
-
+    <form id="fortune-survey" class="panel panel-info modifier">
+      <h2>Please check all that apply</h2>
+      <div class="form-signs-unlucky">
+        <p>Unlucky Signs:</p>
+        <input type="checkbox" name="signs-unlucky" value="Loss of Sleep">
+        Crossed a Black Cat<br>
+        <input type="checkbox" name="signs-unlucky" value="Feeling overwhelmed">
+        Walked under Ladder<br>
+        <input type="checkbox" name="signs-unlucky" value="Loss of apetite">
+        Broke a mirror<br>
+        <input type="checkbox" name="signs-unlucky" value="Trouble focusing">
+        Stepped on a crack<br>
+        <input type="checkbox" name="signs-unlucky" value="Feeling unproductive">
+        Stubbed you toe<br>
+      </div>
+      <div class="form-signs-lucky">
+        <p>Lucky Signs:</p>
+        <input type="checkbox" name="signs-lucky" value="High blood Pressure">
+        Found a four-leaf clover<br>
+        <input type="checkbox" name="signs-lucky" value="Anxiety">
+        Saw a rainbow<br>
+        <input type="checkbox" name="signs-lucky" value="Low energy">
+        Rabbit's Foot<br>
+        <input type="checkbox" name="signs-lucky" value="Insomnia">
+        Ladybug landed on you<br>
+        <input type="checkbox" name="signs-lucky" value="Nausea">
+        Saw a dolphin<br>
+      </div>
+     <button type="submit">Submit Fortune Quiz</button>
+    </form>
+    <div id="fortune" class="panel panel-info modifier">
+      <p><b>Your Fortune Is:</b></p>
+      <p id="output"></p>
+    </div>
   </body>
 </html>
